@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9e699312f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="categoriesStyle.css">
+
+</head>
+
+<body>
+    <div class="header1"> <strong>Search Your Items here...</strong></div>
+    <div class="nav">
+        <ul class="nav-menu">
+            <li>
+                <a href="">Beverages</a>
+            </li>
+            <li> <a href="dairyProducts.html">Dairy Products</a></li>
+            <li>
+                <a href="frozenFood.html">Frozen Food</a>
+            </li>
+            <li>
+                <a href="meat.html">Meat&Fish</a>
+            </li>
+            <li>
+                <a href="snacks.html">Snacks</a>
+            </li>
+        </ul>
+    </div>
+    <div class="right-nav">
+        <a href="index.html">
+    Back to Home</a>
+    </div>
+    <div class="container">
+
+        <div class="data">
+            <div class="header">
+                <div class="searchBar">
+                    <input placeholder="Search..." id="searchBar" name="searchBar" type="text" class="search-input">
+                    <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                </div>
+
+            </div>
+            <div class="body">
+                <div id="root"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const product = [{
+
+            id: 0,
+            image: 'images/pepsiDiet.jpg',
+            title: 'Pepsi Diet Soft Drink 330ML',
+            price: 'LBP 296,000',
+        }, {
+            id: 1,
+            image: 'images/mirinda.png',
+            title: 'Mirinda Orange Soft Drink 330M',
+            price: 'LBP 304,000',
+        }, {
+            id: 2,
+            image: 'images/7up.jpg',
+            title: '7-Up Soft Drink Bottle 330ML ',
+            price: 'LBP 296,000',
+        }, {
+            id: 3,
+            image: 'images/tropicana.jpg',
+            title: 'Tropicana Juice Tetra Mixed Fruits Slice 1L',
+            price: 'LBP 86,000',
+        }, {
+            id: 4,
+            image: 'images/juice.jpg',
+            title: 'Maccaw Banana And Strawberry Juice Slim 180ML',
+            price: 'LBP 269,000 ',
+        }, {
+            id: 5,
+            image: 'images/juiceBottle.jpg',
+            title: 'Maccaw Banana And Strawberry Juice Bottle 1L',
+            price: 'LBP 150,000',
+        }, {
+            id: 6,
+            image: 'images/milk.jpg',
+            title: 'La Bergere Milk UHT Zero Fat 1L',
+            price: 'LBP 121,000',
+        }, {
+            id: 7,
+            image: 'images/kiri.jpg',
+            title: 'Kiri Spreadable Cream Cheese 6 Portions Squares 5X100GR',
+            price: 'LBP 304,000',
+        }, {
+            id: 8,
+            image: 'images/laban.jpg',
+            title: 'Libanlait Laban Entier 2KG',
+            price: 'LBP 296,000',
+        }, {
+            id: 9,
+            image: 'images/eggs.jpg',
+            title: 'Hawa Chicken Red Eggs 30 Pieces',
+            price: 'LBP 340,000',
+        }, {
+            id: 10,
+            image: 'images/lurpak.jpg',
+            title: 'Lurpak Butter Block Unsalted 400GR',
+            price: 'LBP 470,000 ',
+        }, {
+            id: 11,
+            image: 'images/candia.jpg',
+            title: 'Candia Lait Uht Entier 1L X4',
+            price: 'LBP 486,000',
+        }, {
+            id: 12,
+            image: 'images/nuggets.jpg',
+            title: 'Maxims Chicken Nuggets Frozen 500GR',
+            price: 'LBP 271,000',
+        }, {
+            id: 13,
+            image: 'images/fries.jpg',
+            title: 'Maxims Chicken Nuggets Frozen 500GR',
+            price: 'LBP 201,000',
+        }, {
+            id: 14,
+            image: 'images/peas.jpg',
+            title: 'Maxims Frozen Green Peas 400GR ',
+            price: 'LBP 108,000',
+        }, {
+            id: 15,
+            image: 'images/brocoli.jpg',
+            title: 'Plein Soleil Broccoli Frozen 400GR',
+            price: 'LBP 86,000',
+        }, {
+            id: 16,
+            image: 'images/corn.jpg',
+            title: 'Maxims Frozen Kernels Sweet Corn 400GR',
+            price: 'LBP 134,000 ',
+        }, {
+            id: 17,
+            image: 'images/beans.jpg',
+            title: 'Foodys Broad Beans Frozen 400GR',
+            price: 'LBP 139,000',
+        }, {
+            id: 18,
+            image: 'images/shrimps.jpg',
+            title: 'Frozen Shrimps',
+            price: 'LBP 515,775',
+        }, {
+            id: 19,
+            image: 'images/braykatFish.jpg',
+            title: 'Braykat Fish',
+            price: 'LBP 444,000',
+        }, {
+            id: 20,
+            image: 'images/jarbidehFish.jpg',
+            title: 'Jarbideh Fish ',
+            price: 'LBP 941,000',
+        }, {
+            id: 21,
+            image: 'images/beefShoulder.jpg',
+            title: 'Beef Shoulder Local',
+            price: 'LBP 139,000',
+        }, {
+            id: 22,
+            image: 'images/beefMince.jpg',
+            title: 'Beef Mince Local',
+            price: 'LBP 141,050 ',
+        }, {
+            id: 23,
+            image: 'images/chickenLeg.jpg',
+            title: 'Chicken leg',
+            price: 'LBP 150,000',
+        }, {
+            id: 24,
+            image: 'images/crackers.jpg',
+            title: 'Tuc Crackers Paprika 100GR',
+            price: 'LBP 60,000',
+        }, {
+            id: 25,
+            image: 'images/dolsiChips.jpg',
+            title: 'Dolsi Gold Peanut Puffs 80g',
+            price: 'LBP 61,000',
+        }, {
+            id: 26,
+            image: 'images/takis.jpg',
+            title: 'Takis Blue Heat 113.4GR',
+            price: 'LBP 224,000',
+        }, {
+            id: 27,
+            image: 'images/pringles.jpg',
+            title: 'Pringles Original Potato Chips 165g',
+            price: 'LBP 175,000',
+        }, {
+            id: 28,
+            image: 'images/snips.jpg',
+            title: 'Snips Baked Pop Corn Salt 50GR',
+            price: 'LBP 32,000 ',
+        }, {
+            id: 29,
+            image: 'images/crax.jpg',
+            title: 'Eti Crax Curled Sticks 36GR',
+            price: 'LBP 90,000',
+        }, ];
+
+        const categories = [...new Set(product.map((item) => {
+            return item
+        }))]
+
+        document.getElementById('searchBar').addEventListener('keyup', (e) => {
+            const searchData = e.target.value.toLowerCase();
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.title.toLowerCase().includes(searchData)
+                )
+            })
+            displayItem(filteredData)
+        });
+
+        const displayItem = (items) => {
+            document.getElementById('root').innerHTML = items.map((item) => {
+                var {
+                    image,
+                    title,
+                    price
+                } = item;
+                return (
+                    `<div class='box'>
+                        <div class='img-box'>
+                            <img class='images' src=${image}></img>
+                        </div> 
+                        <div class='bottom'>
+                            <p>${title}</p>
+                            <h2> ${price}</h2>
+                        <button>Add to cart</button>
+                        </div>
+                    </div>`
+                )
+            }).join('')
+        };
+        displayItem(categories);
+    </script>
+</body>
+
+</html>

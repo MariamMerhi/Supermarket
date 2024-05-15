@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merhi Market</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/trolleyLogo.png" />
+    <script src="https://kit.fontawesome.com/9e699312f8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!--Navigation Bar(logo,nav-list, cart, favorites)-->
+    <nav class="navigation" id="navigation">
+        <a href="index.html" class="logo">
+            <span>M</span>&nbsp;market</a>
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#category">Categories</a></li>
+            <li><a href="#popular-bundle-pack">Sales</a></li>
+            <li><a href="#download-app">App</a></li>
+        </ul>
+        <!--Right Navigation Bar(cart, favorites)-->
+        <div class="right-nav">
+            <a id="login" class="login" href="login/login.html"><i class="fa-solid fa-user"></i></a>
+            <a href="https://maps.google.com/?cid=16751812434558429246&entry=gps" class="location">
+                <i class="fa-solid fa-location-dot"></i>
+            </a>
+            <a href="login/login.html" class="like"><i class="fa-regular fa-heart"></i><span>0</span></a>
+            <a href="login/login.html" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i><span>0</span>
+            </a>
+        </div>
+    </nav>
+    <!--Serach bar-->
+    <section id="search-banner">
+        <!--background-->
+        <img src="images/retail-and-consumer-goods-mobi-unscreen.gif" class="bg-1" alt="bg">
+
+        <!--Text-->
+        <div class="search-banner-text">
+            <h1>Order your daily Groceries </h1>
+            <strong>#Free delivery</strong>
+
+
+            <!--seacrh box-->
+            <div class="search-box">
+                <!--Search Icon-->
+
+                <a href="seachBar.html"><input type="submit" class="search-btn" value="Search"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="slider">
+        <img name="slide" width="1000" height="200">
+        <script src="script.js"></script>
+
+    </section>
+    <!--categories-->
+
+    <section id="category">
+
+
+        <!--Heading-->
+
+        <div class="category-heading">
+
+            <h2>
+                <a href="#navigation">Top Categories</a></h2>
+            <span>All</span>
+        </div>
+
+        <!--Box Container-->
+
+        <div class="category-container">
+
+
+            <a href="dairyProducts.html" class="category-box">
+                <img src="images/DairyProducts.avif" alt="Dairy Product">
+                <span>Dairy Products</span>
+            </a>
+            <a href="beverages.html" class="category-box">
+                <img src="images/beverages.avif" alt="Dairy Product">
+                <span>Beverages</span>
+            </a>
+            <a href="meat.html" class="category-box">
+                <img src="images/Meat.avif" alt="Dairy Product">
+                <span>Fish and Meat</span>
+            </a>
+
+            <a href="frozenFood.html" class="category-box">
+                <img src="images/FrozenFood.avif" alt="Dairy Product">
+                <span>Frozen Food</span>
+            </a>
+            <a href="snacks.html" class="category-box">
+                <img src="images/snacks.avif" alt="Dairy Product">
+                <span>Snacks</span>
+            </a>
+
+
+        </div>
+
+    </section>
+
+    <!--section end-->
+
+    <section id="popular-product">
+
+        <div class="product-heading">
+            <h3>
+                <a href="#navigation">Most Purchased</a></h3>
+            <span>All</span>
+        </div>
+
+        <div class="product-container">
+
+            <div class="product-box">
+
+                <img src="images/CornFlakes.jpg" alt="CornFlakes">
+                <strong>Popins CornFlakes</strong>
+                <span class="quantity">1 KG</span>
+                <span class="price">711,000 LBP</span>
+                <a href="login/login.html" class="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>Add to cart
+                </a>
+                <a href="login/login.html" class="desc-btn">Description</a>
+                <a href="login/login.html " class="like-btn ">
+                    <i class="far fa-heart "></i>
+                </a>
+            </div>
+
+            <div class="product-box ">
+                <img src="images/slim.jpg " alt="SlimOil ">
+                <strong>Slim Sunflower Oil</strong>
+                <span class="quantity ">4 L</span>
+                <span class="price ">649,000 LBP</span>
+                <a href="login/login.html " class="cart-btn ">
+                    <i class="fas fa-shopping-bag"></i> Add to cart </a>
+                <a href="login/login.html" class="desc-btn ">Description</a>
+                <a href="login/login.html" class="like-btn ">
+                    <i class="far fa-heart "></i>
+                </a>
+            </div>
+            <div class="product-box ">
+                <img src="images/Nutella.jpg " alt="Nutella ">
+                <strong>Nutella Chocolate</strong>
+                <span class="quantity ">500 Gr</span>
+                <span class="price ">678,000 LBP</span>
+
+                <a href="login/login.html " class="cart-btn ">
+                    <i class="fas fa-shopping-bag"></i> Add to cart </a>
+                <a href="login/login.html " class="desc-btn ">Description</a>
+                <a href="login/login.html" class="like-btn ">
+                    <i class="far fa-heart "></i>
+                </a>
+
+            </div>
+            <div class="product-box ">
+                <img src="images/persil.jpg " alt="Persil ">
+                <strong>Persil Lavender Powder</strong>
+                <span class="quantity ">10 KG</span>
+                <span class="price ">1,559,000 LBP</span>
+                <a href="login/login.html" class="cart-btn ">
+                    <i class="fas fa-shopping-bag"></i> Add to cart </a>
+                <a href="login/login.html" class="desc-btn ">Description</a>
+                <a href="login/login.html " class="like-btn ">
+                    <i class="far fa-heart "></i>
+                </a>
+
+            </div>
+            <div class="product-box ">
+                <img src="images/coffee.jpg " alt="Nescafe ">
+                <strong>Nescafe Original Jar</strong>
+                <span class="quantity ">190 Gr</span>
+                <span class="price ">492,000 LBP</span>
+                <a href="login/login.html " class="desc-btn ">
+                    <i class="fas fa-shopping-bag "></i> Add to cart </a>
+                <a href="login/login.html" class="desc-btn ">Description</a>
+                <a href=" login/login.html" class="like-btn ">
+                    <i class="far fa-heart "></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--section end-->
+
+    <section id="popular-bundle-pack">
+
+        <!--heading-->
+
+        <div class="product-heading">
+            <h3>
+                <a href="#navigation">THE BIG SALE</a></h3>
+        </div>
+        <div class="product-container">
+
+            <div class="product-box">
+
+                <img src="images/beans.png " alt="Pack-1" height="100px ">
+
+                <strong>Plein Soleil Green Peas Frozen</strong>
+
+                <span class="quantity " style="text-decoration:line-through; ">240,000 LBP</span>
+                <span style="text-decoration:none;color:red; font-size: 10px; ">Till 10 may</span>
+                <span class="price ">172,000 LBP</span>
+
+                <a href="login/login.html " class="cart-btn">
+                    <i class="fas fa-shopping-bag "></i>Add to cart
+                </a>
+                <a href="login/login.html" class="like-btn ">
+                    <i class="far fa-heart "></i>
+                </a>
+
+            </div>
+            <div class="product-box">
+
+                <img src="images/ulkur.png" alt="Pack-1" height="100px ">
+
+                <strong>Ulker Cubuk Salted Crackers</strong>
+
+                <span class="quantity " style="text-decoration:line-through; ">23,000 LBP</span>
+                <span style="text-decoration:none;color:red; font-size: 10px; ">Till 10 may</span>
+                <span class="price ">13,400 LBP</span>
+
+                <a href="login/login.html" class="cart-btn">
+                    <i class="fas fa-shopping-bag "></i>Add to cart
+                </a>
+                <a href="login/login.html" class="like-btn ">
+                    <i class="far fa-heart "></i>
+                </a>
+
+            </div>
+            <div class="product-box">
+
+                <img src="images/shrimps.png" alt="Pack-1" height="100px ">
+
+                <strong>Frumer Shrimps Breaded Surimi</strong>
+
+                <span class="quantity " style="text-decoration:line-through; ">174,000 LBP</span>
+                <span style="text-decoration:none;color:red; font-size: 10px; ">Till 10 may</span>
+                <span class="price ">90,000 LBP</span>
+
+                <a href="login/login.html" class="cart-btn">
+                    <i class="fas fa-shopping-bag "></i>Add to cart
+                </a>
+                <a href="login/login.html" class="like-btn ">
+                    <i class="far fa-heart "></i>
+                </a>
+
+            </div>
+
+
+    </section>
+
+
+    <section id="clients">
+        <div class="client-heading">
+            <h3>
+                <a href="#navigation">What Our Clients' Say?</a> </h3>
+        </div>
+
+        <div class="client-box-container">
+            <div class="client-box">
+
+                <div class="client-profile">
+
+                    <img src="images/bg-1.png" alt="client">
+
+                    <div class="profile-text">
+                        <strong>Salma</strong>
+                        <span>30/3/2023</span>
+                    </div>
+
+                </div>
+
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+                <p> Clean, organized, and fantastic variety. Competitive prices and excellent customer service. Highly recommend!"
+                </p>
+            </div>
+
+            <div class="client-box">
+
+                <div class="client-profile">
+
+                    <img src="images/bg-1.png" alt="client">
+
+                    <div class="profile-text">
+                        <strong>George</strong>
+                        <span>21/1/2024</span>
+
+                    </div>
+
+                </div>
+
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+                <p>Always fresh produce, great selection, and friendly staff. Convenient location and reasonable prices. Highly recommended for all your grocery needs
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="download-app">
+
+        <div class="app-img">
+            <img src="images/app.jpg" alt="app">
+        </div>
+        <div class="download-app-text">
+            <strong><a href="#navigation">Download App</a> </strong>
+            <p>Download our app now to unlock a world of convenience at your fingertips. With our user-friendly interface and seamless navigation, you can browse, shop, and manage your grocery list with ease, whether you're at home or on the go</p>
+            <br><br>
+            <div class="download-btns">
+                <a href="https://play.google.com/store/apps?hl=en&gl=US"><img src="images/googlePlay.jpg" alt="appstore"></a>
+                <a href="https://www.apple.com/app-store/"><img src="images/appStore.png" alt="playstore"></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                <a href="#"><span>m</span>Market</a>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+                <strong>Location</strong>
+                <ul>
+                    <li><a href="#">Beirut</a></li>
+                    <li><a href="#">Airport- Main Road</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <strong>Category</strong>
+                <ul>
+                    <li>
+                        <a href="#">Food</a>
+                    </li>
+                    <li><a href="#">Conditioners</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <strong>Contact</strong>
+                <ul>
+                    <li>
+                        <a href="#">01 888 888</a>
+                    </li>
+                    <li>
+                        <a href="#">01 999 999</a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
+
+</html>

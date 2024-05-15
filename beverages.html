@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9e699312f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="categoriesStyle.css">
+</head>
+
+<body>
+    <div class="header1"> <strong>Beverages...</strong>
+    </div>
+    <div class="nav">
+        <ul class="nav-menu">
+            <li>
+                <a href="beverages.html">Beverages</a>
+            </li>
+            <li> <a href="dairyProducts.html">Dairy Products</a></li>
+            <li>
+                <a href="frozenFood.html">Frozen Food</a>
+            </li>
+            <li>
+                <a href="meat.html">Meat&Fish</a>
+            </li>
+            <li>
+                <a href="snacks.html">Snacks</a>
+            </li>
+        </ul>
+    </div>
+    <div class="right-nav">
+        <a href="index.html">
+    Back to Home</a>
+    </div>
+    <div class="container">
+
+        <div class="data">
+            <div class="header">
+                <div class="searchBar">
+                    <input placeholder="Search..." id="searchBar" name="searchBar" type="text" class="search-input">
+                    <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                </div>
+
+            </div>
+            <div class="body">
+                <div id="root"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const product = [{
+            id: 0,
+            image: 'images/pepsiDiet.jpg',
+            title: 'Pepsi Diet Soft Drink 330ML',
+            price: 'LBP 296,000',
+        }, {
+            id: 1,
+            image: 'images/mirinda.png',
+            title: 'Mirinda Orange Soft Drink 330M',
+            price: 'LBP 304,000',
+        }, {
+            id: 2,
+            image: 'images/7up.jpg',
+            title: '7-Up Soft Drink Bottle 330ML ',
+            price: 'LBP 296,000',
+        }, {
+            id: 3,
+            image: 'images/tropicana.jpg',
+            title: 'Tropicana Juice Tetra Mixed Fruits Slice 1L',
+            price: 'LBP 86,000',
+        }, {
+            id: 4,
+            image: 'images/juice.jpg',
+            title: 'Maccaw Banana And Strawberry Juice Slim 180ML',
+            price: 'LBP 269,000 ',
+        }, {
+            id: 5,
+            image: 'images/juiceBottle.jpg',
+            title: 'Maccaw Banana And Strawberry Juice Bottle 1L',
+            price: 'LBP 150,000',
+        }, ];
+
+        const categories = [...new Set(product.map((item) => {
+            return item
+        }))]
+
+        document.getElementById('searchBar').addEventListener('keyup', (e) => {
+            const searchData = e.target.value.toLowerCase();
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.title.toLowerCase().includes(searchData)
+                )
+            })
+            displayItem(filteredData)
+        });
+
+        const displayItem = (items) => {
+            document.getElementById('root').innerHTML = items.map((item) => {
+                var {
+                    image,
+                    title,
+                    price
+                } = item;
+                return (
+                    `<div class='box'>
+                        <div class='img-box'>
+                            <img class='images' src=${image}></img>
+                        </div> 
+                        <div class='bottom'>
+                            <p>${title}</p>
+                            <h2> ${price}</h2>
+                        <button>Add to cart</button>
+                        </div>
+                    </div>`
+                )
+            }).join('')
+        };
+        displayItem(categories);
+    </script>
+</body>
+
+</html>
